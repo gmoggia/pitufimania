@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
 	$('#registrar_btn').click(function() {
 
-    // esto es para validar datos
+    // esto no es para validar datos
 		if(validarDatos())
 			inscribirEquipo();
     });
