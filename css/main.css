@@ -1,0 +1,827 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	/*max-height: 768px;*/
+}
+
+html {
+	background: url(../img/bg_mobile.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    /*border-bottom: 20px solid #e44d26;*/
+	background: none;
+	height: 60px;
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+}
+
+.header-container img {
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 75%;
+	width: auto;
+}
+
+.header-container a {
+	color: #fff;
+	text-decoration:none;
+	font-family: 'BDCartoonShout';
+	float:right;
+	margin-right: 20px;
+	margin-top: 10px;
+	font-size: 2vh;
+	cursor:pointer;
+}
+
+.header-container a:hover {
+	color: #FFFF00;
+}
+
+/*.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}*/
+
+/*.header-container,
+.footer-container,*/
+.main aside {
+    /*background: #f16529;*/
+	
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    /*padding: 30px 0;*/
+	padding: 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.main aside {
+	height: 100%;
+	width: 75%;
+	margin: 0 auto;
+	text-align:center;
+	font-family: 'BDCartoonShout';
+}
+
+#kv {
+	/*margin-top: -100px;*/
+	text-align: center;
+}
+
+#kv img {
+	width: 75%;
+}
+
+.overlay {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80%;
+	background-image:url(../img/screen.png);
+	z-index: -2;
+}
+
+form, .form-container {
+	height: 100%;
+	display: inline-block;
+}
+
+.form-container {
+	margin-top: 8px;
+}
+
+form .etiqueta,
+form .campo {
+	float: left;
+	width: 100%;
+}
+
+form .dato {
+	background-color: #FFF;
+	border-color: #0155b8;
+	border-width: 3px;
+	border-style:solid;
+	height: 30px;
+	line-height: 30px;
+	color: #0155b8;
+	text-align:center;
+}
+
+form #codigo {
+	background-color: #0155b8;
+	border-color: #FFF;
+	border-width: 3px;
+	border-style:solid;
+	height: 30px;
+	line-height: 30px;
+	width: 80%;
+	float: none;
+}
+
+#registrar_btn {
+	max-width: 334px;
+	width: 75%;
+	margin-top: 16px;
+}
+
+#aceptar_btn {
+	max-width: 180px;
+	margin-top: 10px;
+}
+
+.btn {
+	text-align:center;
+	margin: 0 auto;
+	float:none;
+	cursor: pointer;
+}
+
+.pitufos {
+	text-align: center;
+	overflow:hidden;
+	margin-top: -18px;
+}
+
+.pitufos img {
+	margin-bottom: -40px;
+}
+
+#left-panel {
+	display: none;
+}
+
+#pitufos-registro {
+	z-index: -1;
+}
+
+#pitufos-registro img {
+	max-width: 347px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#kv img:nth-child(2), #pitufos-registro img:nth-child(2) {
+	display:none;
+}
+
+#premio {
+	text-align: center;
+}
+
+#premio img {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#premio img:nth-child(1) {
+	max-width: 292px;
+	width: 90%;
+}
+
+#premio img:nth-child(2) {
+	max-width: 527px;
+}
+
+#premio img:nth-child(3) {
+	max-width: 250px;
+}
+
+#premio h1 {
+	color: #FFFF00;
+	font-family: 'BDCartoonShout';
+	font-size: 4vh;
+	margin-top: 0px;
+	line-height: 4vh;
+}
+
+#pitufos-premio {
+	padding-top: 20px;
+}
+
+#pitufos-premio img {
+	max-width: 403px;
+	width: 100%;
+}
+
+#pitufos-premio img:nth-child(2) {
+	display: none;
+}
+
+
+#pitufos-premio, #premio {
+	display: none;
+}
+
+#avisos {
+	display: none;
+	position:fixed;
+	
+	align-items: stretch;
+	justify-content: center;
+	flex-direction: column;
+
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+	
+	-webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	
+	-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	
+	width: 100%;
+	height: 100%;
+	z-index: 999999999;
+}
+
+.popup {
+	display: flex;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+	
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+	-webkit-align-items: center;
+    -ms-flex-align: center;
+	
+	-webkit-justify-content: center;
+    -ms-flex-pack: center;
+	
+	-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+	
+	background-color: #FFF;
+	border-color: #0155b8;
+	border-width: 3px;
+	border-style:solid;
+	border-radius: 12px;
+	color: #0155b8;
+	
+	text-align: center;
+	margin: 0 auto;
+	
+	min-height: 300px;
+	max-width: 400px;
+	/*padding-top: 3%;*/
+}
+
+.popup h2,
+.popup p {
+	font-family: 'BDCartoonShout';
+	margin: 0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	max-width: 90%;
+}
+
+.popup h2 {
+	font-size: 
+}
+
+.popup p {
+	line-height: 1em;
+}
+
+.popup .btn {
+	max-width: 90%;
+	margin-bottom: 10px;
+}
+
+.popup .btn img {
+	width: 100%;
+}
+
+.shadowbox {
+	background: rgba(0,0,0,0.8);
+}
+
+#progress {
+	height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+	display: flex;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+	
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+	align-items: center;
+	
+	-webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	
+	display:none;
+}
+#progress img {
+	width:80px;
+	height:auto;	
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+	.header-container img {
+		height: 100%;
+	}
+
+	.main aside {
+		/*
+		width: 75%;
+		margin: 0 auto;
+		text-align:center;*/
+	}
+	
+	#kv img {
+		width: auto;
+	}
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+	
+	#premio img:nth-child(1) {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	
+	html {
+		background: url(../img/bg2.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	.header-container img {
+		margin-top: 1%;
+		margin-left: 5%;
+		height: 75%;
+	}
+	
+	.overlay {
+		right: 0;
+		width: 70%;
+		height: 100%;
+		background-image:url(../img/screen_registro.png);
+	}
+	
+	#left-panel {
+		display: block;
+	}
+	
+	#kv img:nth-child(1) {
+		display: none;
+	}
+
+	#kv img:nth-child(2) {
+		display: inline-block;
+	}
+	
+	#kv img {
+		max-width: 593px;
+		width: 100%;
+	}
+	
+	.pitufos {
+		overflow:visible;
+	}
+	
+	#pitufos-registro {
+		position:absolute;
+		bottom: -25%;
+		width: 75%;
+	}
+	
+	#pitufos-registro img {
+		max-width: 851px;
+		max-height: 851px;
+		width: 150%;
+		height: auto;
+		margin-left: -25% !important;
+	}
+	
+	#pitufos-registro img:nth-child(1) {
+		display:none;
+	}
+	
+	#pitufos-registro img:nth-child(2) {
+		display:block;
+		position:relative;
+		margin-bottom: -100px;
+	}
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+	
+	.header-container .wrapper {
+		
+	}
+	
+	.header-container a {
+		font-size: 3vh;
+	}
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 36%;
+		padding: 0;
+		text-align:center;
+		margin-top: 10%;
+    }
+	
+	#registrar_btn {
+		margin-top: 24px;
+	}
+	
+	form .dato {
+		margin-bottom: 10px;
+	}
+	
+	/*form .dato, */form .etiqueta {
+		text-align: left;
+	}
+	
+	form .center {
+		text-align: center;
+	}
+	
+	.form-container {
+		margin-top: 0px !important;
+	}
+	
+	/*PREMIOS*/
+	#pitufos-premio {
+		margin-top: -10%;
+	}
+	
+	#pitufos-premio img {
+		max-width: 687px;
+		width: 150%;
+		margin-left: -25%;
+	}
+	
+	#pitufos-premio img:nth-child(1) {
+		display: none;
+	}
+	
+	#pitufos-premio img:nth-child(2) {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+   
+   	html, body {
+		overflow-y: hidden;
+	}
+
+    .wrapper {
+        /*width: 1026px;*/ /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+	
+	#pitufos-registro {
+		width: 50%;
+	}
+	
+	.header-container img {
+		margin-top: 1%;
+		margin-left: 5%;
+		height: 100%;
+	}
+	
+	#pitufos-registro {
+		left: 15%;
+	}
+	
+	.overlay {
+		width: 768px;
+	}
+	
+	#pitufos-premio {
+		margin-top: -25%;
+	}
+	
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
